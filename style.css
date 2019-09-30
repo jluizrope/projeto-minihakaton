@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+.header-Title-h1{
+	text-align: center;
+}
+.header-nav{
+	text-align: center;
+}
+.section-History{
+	width: 700px;
+	height: 350px;
+	background-color: red;
+}
+.section-History-h1{
+	text-align: center;
+}
+.section-History-p{
+	text-align: center;
+}
+.section-History-img01{
+	width: 300px;
+	height: 180px;
+}
+.section-History-img02{
+	width: 300px;
+	height: 180px;
+}
+.section-PersonalRelationships{
+	width: 700px;
+	height: 500px;
+	background-color: green;
+}
+.section-PersonalRelationships-h1{
+	text-align: center;
+}
+.section-PersonalRelationships-p{
+	text-align: center;
+}
+.section-PersonRelations1-img01{
+	width: 300px;
+	height: 160px;
+}
+.section-PersonRelations2-img02{
+	width: 300px;
+	height: 160px;
+}
+.section-FamilyRelationships{
+	width: 700px;
+	height: 500px;
+	background-color: red;
+}
+.section-FamilyRelationships-h1{
+	text-align: center;
+}
+.section-FamilyRelations1-img01{
+	width: 300px;
+	height: 160px;
+}
+
+

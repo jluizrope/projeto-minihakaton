@@ -55,7 +55,46 @@
 .section-FamilyRelationships-h1{
 	text-align: center;
 }
+.section-FamilyRelations-p{
+	text-align: center;
+}
 .section-FamilyRelations1-img01{
+	width: 300px;
+	height: 160px;
+}
+.section-FamilyRelations2-img02{
+	width: 300px;
+	height: 160px;
+}
+.section-SocialRelationships{
+	width: 700px;
+	height: 500px;
+	background-color: green;
+}
+.section-SocialRelationships-p{
+	text-align:center;
+}
+.section-SocialRelationships-img01{
+	width: 300px;
+	height: 160px;
+}
+.section-SocialRelationships-img02{
+	width: 300px;
+	height: 160px;
+}
+.section-InternationalRelationships{
+	width: 700px;
+	height: 500px;
+	background-color: green;
+}
+.section-InternationalRelationships-p{
+	text-align:center;
+}
+.section-InternationalRelationships-img01{
+	width: 300px;
+	height: 160px;
+}
+.section-InternationalRelationships-img02{
 	width: 300px;
 	height: 160px;
 }

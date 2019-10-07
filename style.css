@@ -10,8 +10,7 @@
 	text-align: center;
 }
 .section-History{
-	width: 700px;
-	height: 350px;
+	width: 100%;
 	background-color: red;
 }
 .section-History-h1{
@@ -21,16 +20,15 @@
 	text-align: center;
 }
 .section-History-img01{
-	width: 300px;
-	height: 180px;
+	width: 45%;
+	height: 35%;
 }
 .section-History-img02{
-	width: 300px;
-	height: 180px;
+	width: 45%;
+	height: 35%;
 }
 .section-PersonalRelationships{
-	width: 700px;
-	height: 500px;
+	width: 100%;
 	background-color: green;
 }
 .section-PersonalRelationships-h1{
@@ -40,16 +38,15 @@
 	text-align: center;
 }
 .section-PersonRelations1-img01{
-	width: 300px;
-	height: 160px;
+	width: 45%;
+	height: 35%;
 }
 .section-PersonRelations2-img02{
-	width: 300px;
-	height: 160px;
+	width: 45%;
+	height: 30%;
 }
 .section-FamilyRelationships{
-	width: 700px;
-	height: 500px;
+	width: 100%;
 	background-color: red;
 }
 .section-FamilyRelationships-h1{
@@ -59,44 +56,42 @@
 	text-align: center;
 }
 .section-FamilyRelations1-img01{
-	width: 300px;
-	height: 160px;
+	width: 45%;
 }
 .section-FamilyRelations2-img02{
-	width: 300px;
-	height: 160px;
+	width: 45%;
 }
 .section-SocialRelationships{
-	width: 700px;
-	height: 500px;
-	background-color: green;
+	width: 100%;
+	background-color: red;
+}
+.section-SocialRelationships-h1{
+	text-align: center;
 }
 .section-SocialRelationships-p{
 	text-align:center;
 }
 .section-SocialRelationships-img01{
-	width: 300px;
-	height: 160px;
+	width: 45%;
 }
 .section-SocialRelationships-img02{
-	width: 300px;
-	height: 160px;
+	width: 45%;
 }
 .section-InternationalRelationships{
-	width: 700px;
-	height: 500px;
+	width: 100%;
 	background-color: green;
+}
+.section-InternationalRelationships-h1{
+	text-align: center;
 }
 .section-InternationalRelationships-p{
 	text-align:center;
 }
 .section-InternationalRelationships-img01{
-	width: 300px;
-	height: 160px;
+	width: 45%;
 }
 .section-InternationalRelationships-img02{
-	width: 300px;
-	height: 160px;
+	width: 45%;
 }
 
 

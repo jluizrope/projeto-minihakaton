@@ -21,11 +21,11 @@
 }
 .section-History-img01{
 	width: 45%;
-	height: 35%;
+	justify-content: center;
 }
 .section-History-img02{
 	width: 45%;
-	height: 35%;
+	justify-content: center;
 }
 .section-PersonalRelationships{
 	width: 100%;
@@ -39,11 +39,9 @@
 }
 .section-PersonRelations1-img01{
 	width: 45%;
-	height: 35%;
 }
 .section-PersonRelations2-img02{
 	width: 45%;
-	height: 30%;
 }
 .section-FamilyRelationships{
 	width: 100%;

@@ -6,7 +6,7 @@ render() {
     <div>
         <div>
             <h1>Contador</h1>
-            <input className='Contador' type='Number'></input
+            <input className='Contador' type='Number'></input>
             <span></span>            
             <img src="seta.png"></img>   
             <img src=""></img>        

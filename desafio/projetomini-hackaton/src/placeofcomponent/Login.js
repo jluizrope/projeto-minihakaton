@@ -1,19 +1,20 @@
 import React from 'react';
 import '../App.css';
 
-export default class Login extends React.Component {
+class Login extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            currentScreen = 'login',
+            // currentScreen: 'login',
             user: {
-              email: '';
-              password1: '';
-              password2: '';
+              email: '',
+              password1: '',
+              password2: '',
               message: ''
+            }
+        } 
     }
-}
 
 handleSubmit = (ev) => {
     ev.preventDefault();
@@ -44,13 +45,13 @@ changePassword2 = (ev) => {
     })
 }
 
-this.render() {
-    return (
-        <form onSubmit={this.handleSubmit}>
-            <label>
-                <p>Email</p>
-                <input required autoFocus type='email' onchange={this.changeEmail}
-                placeholder='name@email.com'/>
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    <p>Email</p>
+                    <input required autoFocus type='email' onchange={this.changeEmail}
+                    placeholder='name@email.com'/>
             </label>
             <label>
                 <p>Code</p>
@@ -67,3 +68,5 @@ this.render() {
         )
     }
 }
+
+export default Login;

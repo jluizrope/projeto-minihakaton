@@ -20,11 +20,17 @@ handleSubmit = (ev) => {
     ev.preventDefault();
 
     if(this.state.password1 === this.state.password2){
-        this.setState({message:'right code'})
+        this.props.createAccount(this.state.name, this.state.email, this.state.password)        
     }
     else{
         this.setState({message:'wrongcode'})
     }
+}
+
+changeName = (event) => {
+    this.setState({
+        name: event.target.value,
+    })
 }
 
 changeEmail = (event) => {
@@ -33,38 +39,36 @@ changeEmail = (event) => {
     })
 }
 
-changePassword1 = (ev) => {
+changePassword1 = (event) => {
     this.setState({
-        password1: ev.target.value
+        password1: event.target.value
     })
 }
 
-changePassword2 = (ev) => {
+changePassword2 = (event) => {
     this.setState({
-        password2: ev.target.value
+        password2: event.target.value
     })
 }
 
     render() {
         return (
+        <div>
             <form onSubmit={this.handleSubmit}>
                 <label>
-                    <p>Email</p>
+                    <p>EMAIL</p>
                     <input required autoFocus type='email' onchange={this.changeEmail}
                     placeholder='name@email.com'/>
-            </label>
-            <label>
-                <p>Code</p>
-                <input required type='password' placeholder='#@ 123 abc !' onchange={this.changePassword}/>
-            </label>
-            <label>
-                <p>Code validation</p>
-                <input value={this.state.password2} required type='password'
-                placeholder='#@ 123 abc !' onchange={this.changePassword2}/>
-            </label> 
-            <button>Enter</button>
-            <p>{this.state.message}</p>
-        </form>
+                </label>
+                <label>
+                    <p>CODE</p>
+                    <input required type='password' placeholder='#@ 123 abc !' onchange={this.changePassword}/>
+                </label>
+                <button onClick={()=> this.props.Login}>Enter</button>
+                <p>{this.state.message}</p>
+            </form>
+            <button onClick={()=> this.props.createAccount}>Create an Account</button>      
+        </div>
         )
     }
 }

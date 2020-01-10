@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Conta from './placeofcomponent/Conta';
+import Signup from './placeofcomponent/Signup';
 import Login from './placeofcomponent/Login';
 import Timer from './placeofcomponent/Timer';
 
@@ -10,23 +10,40 @@ class App extends Component {
     super (props);
 
     this.state = {
-      showScreen: 'Login'
+      showScreen: 'Login',
+      user: {
+        name: '',
+        email: '',
+        password: ''
+      }
     }
+  }
 
+  createAccount = (name, email, password) => {
+    this.setState({
+      user: {
+        name: name,
+        email: email,
+        password: password,
+      },
+      showScreen: 'Signup',
+    });
   }
-  handleLogin = () => {
-    this.setState ({      
-    })
+
+  matchEvents= (email, password) => {
+    console.log(email === this.state.user.email)
+    console.log(password === this.state.user.password)
   }
+ 
   renderScreen = () => {
     switch(this.state.showScreen){
-      case "Conta":
-        return <Conta></Conta>;
+      case "Signup":
+        return <Signup></Signup>;
       case "Timer":
         return <Timer></Timer>;      
       case "Login":
       default:
-        return <Login></Login>;
+        return <Login createAccount = {()=>this.createAccount()} Login = {()=>this.matchEvents()}/>;
         }
   }
 
@@ -34,7 +51,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Login></Login> */}
-     {this.state.showScreen}
+     {this.renderScreen()}
       </div>
     );
   }

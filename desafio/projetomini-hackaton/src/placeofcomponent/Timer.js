@@ -5,7 +5,7 @@ render() {
     return(
     <div>
         <div>
-            <h1>Contador</h1>
+            <h1>Counter</h1>
             <input className='Contador' type='Number'></input>
             <span></span>            
             <img src="seta.png"></img>   

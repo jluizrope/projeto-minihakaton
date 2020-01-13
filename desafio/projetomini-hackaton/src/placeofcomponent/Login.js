@@ -64,10 +64,10 @@ changePassword2 = (event) => {
                     <p>CODE</p>
                     <input required type='password' placeholder='#@ 123 abc !' onchange={this.changePassword}/>
                 </label>
-                <button onClick={()=> this.props.Login}>Enter</button>
+                <button onClick={()=> this.props.Timer}>Enter</button>
                 <p>{this.state.message}</p>
             </form>
-            <button onClick={()=> this.props.createAccount}>Create an Account</button>      
+            <button onClick={()=> this.props.createAccount()}>CREATE AN ACCOUNT</button>     
         </div>
         )
     }
